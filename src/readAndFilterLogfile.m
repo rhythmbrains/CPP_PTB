@@ -1,3 +1,5 @@
+% (C) Copyright 2020 CPP_PTB developers
+
 function outputFiltered = readAndFilterLogfile(columnName, filterBy, varargin)
     % outputFiltered = readOutputFilter(filterHeader, filterContent, varargin)
     %

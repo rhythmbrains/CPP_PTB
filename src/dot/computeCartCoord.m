@@ -1,3 +1,5 @@
+% (C) Copyright 2020 CPP_PTB developers
+
 function cartesianCoordinates = computeCartCoord(positions, cfg)
     cartesianCoordinates = ...
         [positions(:, 1) + cfg.dot.matrixWidth, ... % x coordinate
