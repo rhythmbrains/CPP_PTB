@@ -19,14 +19,14 @@ function sec = waitForTrigger(varargin)
     % triggers coming from the scanner in a real case scenario.
     %
     % INPUTS
-    %  - varargin{1} = cfg
+    % - varargin{1} = cfg
     %
     % - varargin{2} = deviceNumber
     %
     % - varargin{3} = quietMode: a boolean to make sure nothing is printed on the screen or
     % the prompt
     %
-    % - nbTriggersToWait
+    % - nvarargin{4} = nbTriggersToWait
 
     [cfg, nbTriggersToWait, deviceNumber, quietMode] = checkInputs(varargin);
 
