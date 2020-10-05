@@ -1,4 +1,4 @@
-function waitForTrigger(varargin)
+function sec = waitForTrigger(varargin)
     % waitForTrigger(cfg, deviceNumber, quietMode, nbTriggersToWait)
     %
     % Counts a certain number of triggers coming from the scanner before returning.
@@ -43,7 +43,7 @@ function waitForTrigger(varargin)
 
             keyCode = []; %#ok<NASGU>
 
-            [~, keyCode] = KbPressWait(deviceNumber);
+            [sec, keyCode] = KbPressWait(deviceNumber);
 
             if strcmp(KbName(keyCode), cfg.mri.triggerKey)
 
